@@ -5,10 +5,6 @@ const path = require('path');
 
 const envConfig = dotenv.config();
 
-if(envConfig.error){
-    throw envConfig.error
-}
-
 const app = express()
 
 app.set('port', process.env.PORT || 3000)
